@@ -50,3 +50,27 @@ select count(name) from country where name like 'r%';
 select region, max(population), min(population) from country group by region;
 
 select continent ,region , sum(population) from country group by continent, region;
+
+
+
+
+
+
+
+select continent, count(name) from country group by continent;
+
+select continent, count(name) from country where indepyear>=1900 group by continent;
+
+select continent, count(name) from country where indepyear>=1900 group by continent having count(name)>=15;
+
+
+select * from country;
+
+select * from country order by name;
+
+select * from country order by indepyear;
+
+select * from country order by indepyear desc;
+
+select * from country order by indepyear, code;
+
